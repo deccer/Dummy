@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <glad/gl.h>
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 int main() {
@@ -9,7 +9,7 @@ int main() {
         return 0;
     }
 
-    if (gladLoadGL(glfwGetProcAddress) == 0)
+    if (gladLoadGL() == 0)
     {
         return 0;
     }

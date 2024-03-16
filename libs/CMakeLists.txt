@@ -13,5 +13,6 @@ target_compile_definitions(glm INTERFACE
         GLM_FORCE_RADIANS
 )
 
-add_subdirectory(glad/cmake glad_cmake)
-glad_add_library(glad REPRODUCIBLE EXCLUDE_FROM_ALL LOADER API gl:core=4.6)
+add_library(glad
+  glad/src/glad.c)
+target_include_directories(glad PUBLIC glad/include)

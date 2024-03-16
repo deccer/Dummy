@@ -7,3 +7,4 @@ add_subdirectory(libs)
 add_executable(Dummy main.cpp)
 
 target_link_libraries(Dummy PRIVATE glm glfw glad)
+#target_include_directories(Dummy PUBLIC glad)
